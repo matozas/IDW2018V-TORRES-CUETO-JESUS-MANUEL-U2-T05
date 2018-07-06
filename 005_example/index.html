@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Bootstrap Example</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+<br>
+
+<div class="container">
+ 
+  <!--- Nav tabs -->
+  <ul class="nav nav-tabs" role="tablist">
+    <li class="nav-item">
+      <a class="nav-link active" data-toggle="tab" href="#home">Informatica</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu1">Matematicas</a>
+    </li>
+    <li class="nav-item">
+      <a class="nav-link" data-toggle="tab" href="#menu2">Quimica</a>
+    </li>
+  </ul>
+
+  <!-- Tab panes -->
+  <div class="tab-content">
+   
+      <!-- 1/////////////////////////////////////////////////////////////////////////  -->
+    <div id="home" class="container tab-pane active"><br>
+       <!-- clase collapse para abrir el nav. WORD  -->
+        <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                        Microsoft Word
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordion">
+                    <div class="card-body">
+                            Microsoft Word es un programa informático orientado al procesamiento de textos. 
+                            Fue creado por la empresa Microsoft, y viene integrado predeterminadamente en el paquete 
+                            ofimático denominado Microsoft Office
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <!-- clase collapse para abrir el nav. EXCEL  -->
+                <div class="card">
+                        <div class="card-header" id="headingTwo">
+                          <h5 class="mb-0">
+                            <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                              Microsoft Excel
+                            </button>
+                          </h5>
+                        </div>
+                        <div id="collapseTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordion">
+                          <div class="card-body">
+                                Microsoft Excel es una aplicación de hojas de cálculo que forma parte de la suite 
+                                de oficina Microsoft Office. Es una aplicación utilizada en tareas financieras y contables, 
+                                con fórmulas, gráficos y un lenguaje de programación
+                        </div>
+                        </div>
+                      </div>
+
+
+                </div>
+               
+
+
+    
+    
+    </div>
+  <!--2//////////////////////////////////////////////////////////////////////////////////////////// -->
+    
+    <div id="menu1" class="container tab-pane fade"><br>
+        
+        <!-- clase collapse para abrir el nav. WORD  -->
+        <div id="accordion">
+                <div class="card">
+                  <div class="card-header" id="headingOne">
+                    <h5 class="mb-0">
+                      <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne2" aria-expanded="true" aria-controls="collapseOne2">
+                        Calculadora
+                      </button>
+                    </h5>
+                  </div>
+              
+                  <div id="collapseOne2" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+                        <div class="container">
+                            <br>
+                                <h6>Operacion </h6>
+                                <form>
+                                  <div class="radio">
+                                    <label><input type="radio" name="optradio">Suma</label>
+                                  </div>
+                                  <div class="radio">
+                                    <label><input type="radio" name="optradio">Resta</label>
+                                  </div>
+                                  <div class="radio disabled">
+                                    <label><input type="radio" name="optradio" disabled>Multiplicacion</label>
+                                  </div>
+                                </form>
+                              </div>
+                 
+                              <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12  form-group">
+                                    <label for="exampleInputEmail1">Numero 1</label>
+                                    <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                     </div> 
+                
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12  form-group">
+                                <label for="exampleInputEmail1">Numero 2</label>
+                                <input type="number" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" >
+                                 </div>
+                    
+                        <div class="col-xs-12 col-sm-6 col-md-6 col-lg-12 col-xl-12  form-group">
+                       <h3>Resultado:  </h3>
+                        </div>
+          
+                   
+                  </div>
+                  <div class="card-body">
+                        Realiza Operaciones Matematicas  
+                </div>  
+                </div>  
+                 
+                </div>
+    </div>
+
+  <!-- 3/////////////////////////////////////////////////////////////////////////////////////////////////////////  -->
+    <div id="menu2" class="container tab-pane fade"><br>
+      
+        <div class="container">
+                      
+                <table class="table table-bordered">
+                 
+                  <tbody>
+                    <tr>
+                      <td>Materia</td>
+                      <td>En quimica la materia se define como cualquier cosa que tenga masa en reposo,
+                          volumen y se componga de particulas. Las particulas que componen la materia tambien
+                          poseen masa en reposo, un ejemplo es el foton. La materia puede ser una sustancia quimica 
+                          pura o una mezcla de sustancias. 
+                      </td>
+                      
+                    </tr>
+                    <tr>
+                      <td>Atomo </td>
+                      <td>El atomo  es la unidad de la quimica.Se compone de un nucleo denso llamdo nucleo atomico,
+                          el cual es rodeado por un espacio denominado nube de electrones. El nulceo se compone de patrones 
+                          cargados positivamente y de neutrones sin carga(Ambos denominados nucleones).La nube de electrones 
+                          son electrones que giran alrededor del nucleo cargados negativamente.  
+
+                      </td>
+                    </tr>
+                    <tr>
+                      <td>Elemento</td>
+                      <td>Un elemto quimico es una sustancia pura que se compone de un solo atomo, caracterizado por su Numero
+                          particular de prtones en los nucleos de sus atomos, nucleo de sus atomos, numeros conocidos como numeros
+                          atomico y que es representado por el simbolo Z. El numero masico es la suma del numero de protrones
+                          y neutrones del nucleo. Aunque todos los nucleos de todos los atomos que pertenecen a un elemento tengan 
+                          el mismo numero atomico, no nesesariamente deben tener el mismo numero masico; atomos de un elemento
+                          que tienen diferentes numeros de masa que se conocen como isotopos. Por ejemplo todos los atomos con 6 protrones
+                          en sus nucleos son atomos de carbono, pero los atomos de carbono, pero los atomos de carbono pueden tener 
+                          numeros masicos de 12 o 13.
+
+                      </td>
+                    </tr>
+
+                    <tr>
+                            <td>Compuesto</td>
+                            <td>Un compuesto es una sustancia quimica pura compuesta de mas de un elemento. Las propiedades de un
+                                compuesto tienen poca similitud con la de los elemntos. La nomenclatura estandar de los compuestos 
+                                es fijado de la union Internaciona de Quimica pura y Aplicada (IUAPAC). Los compuestos organicos se
+                                nombran segun el sistema de nomenclatura inorganica. Ademas el servicio de resumenes Quimicos  ha 
+                                ideado un metodo para nombrar las sustancias quimicas. En este esquema cada sustancia quimica es 
+                                identificable por un numero conocido como numero de registros CAS.
+
+
+      
+                            </td>
+                          </tr>
+                  </tbody>
+                </table>
+              </div>
+        
+
+    </div>
+
+  </div>
+</div>
+
+</body>
+</html>
